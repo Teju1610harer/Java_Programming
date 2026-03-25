@@ -1,0 +1,17 @@
+# Eclipse / IDE
+.metadata/
+.settings/
+.classpath
+.project
+Servers/
+
+# Libraries
+mysql-connector*/
+
+# Build
+bin/
+build/
+
+# System
+.DS_Store
+Thumbs.db

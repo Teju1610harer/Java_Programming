@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hidden Field Session</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f5f5f5;
+        }
+
+        .box {
+            width: 400px;
+            margin: 80px auto;
+            padding: 25px;
+            border: 2px solid black;
+            background: white;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            border: 1px solid black;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: black;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h2 style="text-align:center;">Student Marks</h2>
+
+        <form action="Servlet1" method="post">
+
+            <label>Username</label>
+            <input type="text" name="Username" required>
+
+            <label>DCN Marks</label>
+            <input type="number" name="DCN" required>
+
+            <label>SE Marks</label>
+            <input type="number" name="SE" required>
+
+            <label>WT Marks</label>
+            <input type="number" name="WT" required>
+
+            <button type="submit">Next</button>
+
+        </form>
+    </div>
+
+</body>
+</html>

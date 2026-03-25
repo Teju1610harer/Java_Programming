@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Student Marks</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            width: 400px;
+            margin: 80px auto;
+            padding: 25px;
+            border: 2px solid black;
+            background: white;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid black;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: black;
+            color: white;
+            border: none;
+        }
+
+        button:hover {
+            background: gray;
+        }
+
+        /* PRINT FIX */
+        @media print {
+            body {
+                background: white;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Student Marks</h2>
+
+    <form action="Servlet1" method="post">
+
+        <label>Username</label>
+        <input type="text" name="Username" required>
+
+        <label>DCN Marks</label>
+        <input type="number" name="DCN" required>
+
+        <label>SE Marks</label>
+        <input type="number" name="SE" required>
+
+        <label>WT Marks</label>
+        <input type="number" name="WT" required>
+
+        <button type="submit">Next</button>
+
+    </form>
+</div>
+
+</body>
+</html>
